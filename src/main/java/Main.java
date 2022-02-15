@@ -40,10 +40,10 @@ public class Main {
             System.out.println("Проверка на ошибки, на NULL!");
         }
 
-        try {
+        /*try {
             IndexStorage indexStorageErr = new IndexStorage(-1);
         } finally {
             System.out.println("Проверка на ошибки, на отрицательное значение!");
-        }
+        }*/
     }
 }
