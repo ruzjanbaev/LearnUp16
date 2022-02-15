@@ -27,23 +27,5 @@ public class Main {
         }
         System.out.println("]");
 
-        //В задании не сказано, что пустой массив создавать нельзя
-        arr = new int[]{};
-        System.out.println("arr = " + Arrays.toString(arr));
-        try {
-            ArrayIndexStorage arrayIndexStorageNull = new ArrayIndexStorage(arr);
-            System.out.println("arrayIndexStorageNull.size() = " + arrayIndexStorageNull.size());
-            System.out.println("arrayIndexStorageNull.reverse() = " + Arrays.toString(arrayIndexStorageNull.reverse()));
-            //System.out.println(arrayIndexStorageNull.get(0)); // тут будет явная ошибка
-            //System.out.println("arrayIndexStorageNull.getParent = " + arrayIndexStorageNull.getParent(0)); // тут будет явная ошибка
-        } finally {
-            System.out.println("Проверка на ошибки, на NULL!");
-        }
-
-        /*try {
-            IndexStorage indexStorageErr = new IndexStorage(-1);
-        } finally {
-            System.out.println("Проверка на ошибки, на отрицательное значение!");
-        }*/
     }
 }
