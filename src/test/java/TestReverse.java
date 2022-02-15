@@ -15,14 +15,11 @@ public class TestReverse {
         for (int i = 0; i < indexStorage.size(); i++) {
             arr[i] = indexStorage.get(i);
         }
-        System.out.println("nSize = " + nSize + ", arr = " + Arrays.toString(arr));
         //----------------- 2. Фаза. Теситруемое действие.
         int[] actual = arr.clone();
         ArrayIndexStorage arrayIndexStorage = new ArrayIndexStorage(arr.clone());
         actual = arrayIndexStorage.reverse();
         int[] expected = arrayIndexStorage.reverse();
-        System.out.println("actual = " + Arrays.toString(actual));
-        System.out.println("expected = " + Arrays.toString(expected));
         //------------------- 3. Фаза. Проверка.
         Assertions.assertArrayEquals(expected, actual);
     }

@@ -12,12 +12,9 @@ public class TestGet {
         int[] expected = new int[arr.length];
         int[] actual = arr;
         //----------------- 2. Фаза. Теситруемое действие.
-        System.out.print("arrayIndexStorage.get = [");
         for (int i = 0; i < arrayIndexStorage.size(); i++) {
             expected[i] = arrayIndexStorage.get(i);
-            System.out.print("[" + i + "] = " + expected[i] + ", ");
         }
-        System.out.println("]");
         //------------------- 3. Фаза. Проверка.
         Assertions.assertArrayEquals(expected, actual);
     }

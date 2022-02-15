@@ -14,8 +14,6 @@ public class TestSize{
         //----------------- 2. Фаза. Теситруемое действие.
         int expected = nSize;
         int actual = indexStorage.size();
-        System.out.println("size expected = " + expected);
-        System.out.println("size actual = " + actual);
         //------------------- 3. Фаза. Проверка.
         Assertions.assertEquals(expected, actual);
     }
