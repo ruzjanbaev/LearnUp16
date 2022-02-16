@@ -21,11 +21,4 @@ public class ArrayIndexStorage extends IndexStorage {
     protected int getParent(int index) {
         return super.get(index);
     }
-
-    @Override
-    public String toString() {
-        return "ArrayIndexStorage{" +
-                "arr=" + Arrays.toString(arr) +
-                '}';
-    }
 }

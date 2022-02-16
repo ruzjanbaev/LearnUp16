@@ -26,6 +26,5 @@ public class Main {
             System.out.print(arrayIndexStorage.getParent(i) + ((i < arrayIndexStorage.size() - 1) ? ", " : ""));
         }
         System.out.println("]");
-
     }
 }
